@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 900px;
+    max-width: 900px;
+    min-height: 900px;
+    max-height: 900px;
+}
+
+.row-container {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.card {
+    display: flex;
+    min-width: 0;
+    width: 100%;
+    border: 1px;
+    border-style: solid;
+}
+
+.btn-container {
+    margin-top: 50px;
+}

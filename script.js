@@ -32,6 +32,25 @@ function deleteGrid() {
         cardContainer.removeChild(cardContainer.lastChild);
 }
 
+// Toggle grid on click
+function toggleGrid() {
+    const cards = document.querySelectorAll('.card');
+
+    if(toggleButton.value == 'off') {
+        toggleButton.value = 'on';
+        console.log(`toggled ${toggleButton.value}`);
+        cards.forEach(card => {
+            card.style.border = '0.01px solid';
+        })
+    } else {
+        toggleButton.value = 'off'
+        console.log(`toggled ${toggleButton.value}`);
+        cards.forEach(card => {
+            card.style.borderStyle = 'none';
+        })
+    }
+}
+
 
 //--------------------------------------------------------------
 // Definitions
@@ -55,24 +74,16 @@ cardContainer.addEventListener('mouseover', e => {
     let card = document.querySelector('.card');
     card = e.target;
     if(card.classList.contains('card-container')) return;
-    card.setAttribute('style', 'background-color: black');
+    card.style.backgroundColor = 'black';
 });
-
 
 // Clear canvas button
 clearButton.addEventListener('click', () => {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-        card.setAttribute('style', 'background-color: white');
+        card.style.backgroundColor = 'white';
     });
 });
 
 // Toggle grid button 
-// toggleButton.addEventListener('click', () => {
-//     let cards = query.querySelectorAll('.card');
-
-//     cards.forEach(card => {
-        
-//     })
-
-// })
+toggleButton.addEventListener('click', toggleGrid);

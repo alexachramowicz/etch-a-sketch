@@ -1,2 +1,3 @@
--add color picker?
 -bug: 'e.target' returning div card-container instead of card
+-add color picker? eraser? 
+-add button styling

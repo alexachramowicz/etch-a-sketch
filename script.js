@@ -61,6 +61,7 @@ const btnContainer = document.querySelector('.btn-container');
 const gridButton = document.querySelector('#grid-btn');
 const toggleButton = document.querySelector('#toggle-btn');
 const clearButton = document.querySelector('#clear-btn');
+const eraseButton = document.querySelector('#erase-btn');
 
 
 // Initialize grid
